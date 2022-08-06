@@ -17,11 +17,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "serve": "^14.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=2560 start",
-    "build": "react-scripts --max_old_space_size=2560 build",
+    "start": "serve -s build",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
