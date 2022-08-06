@@ -1,9 +1,12 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Grid, Stack, Box, TextField, Button, Typography } from '@mui/material'
-import { Dashboard, Telegram } from '@mui/icons-material';
+import { Dashboard, Edit, Telegram } from '@mui/icons-material';
 import CssBaseline from '@mui/material/CssBaseline';
 //import Sidebar from './components/sidebar/Sidebar';
 import Sidebar from './components/sidebar/Sidebar';
+import DisGram from './pages/disGram/DisGram';
+import FormField from './components/formField/FormField';
+import './App.css';
 
 const darkTheme = createTheme({
   palette: {
@@ -20,7 +23,10 @@ function App() {
 
 
   return (
-    <Sidebar />
+    <div className='App'>
+      <Sidebar className="sideBar" />
+      <DisGram className="disGram" />
+    </div>
     //   <ThemeProvider theme={darkTheme}>
     //     <CssBaseline />
     //     <Box sx={{ width: '100%' }}>

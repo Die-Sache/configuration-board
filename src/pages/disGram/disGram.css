@@ -1,0 +1,20 @@
+.sectionTitle {
+    color: gray;
+    margin-left: 30px;
+    
+}
+
+.configSection {
+    display: grid;
+}
+
+.configInput {
+    display:flex;
+   
+}
+
+.subSectionTitle {
+    margin-left: 30px;
+    color: gray
+}
+
