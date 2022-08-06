@@ -21,7 +21,6 @@ const darkTheme = createTheme({
 
 function App() {
 
-
   return (
     <div className='App'>
       <Sidebar className="sideBar" />
