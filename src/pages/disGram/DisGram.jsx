@@ -78,14 +78,14 @@ function DisGram() {
 
 
     let handleOnSave = async (data) => {
-        await fetch('https://disgramm.herokuapp.com//config/setEnv', {
+        await fetch('https://disgramm.herokuapp.com/config/setEnv', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(state.data)
         });
-        await fetch('https://disgramm.herokuapp.com//config/start');
+        await fetch('https://disgramm.herokuapp.com/config/start');
     }
 
     return (
